@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+#page {
+	width: 11in;
+	height: 17in;
+	border: 1px solid #000;
+	transform-origin: 50% 0%;	
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+
+}
+
+
+@media print {
+
+	#page {
+		border: none!important; /*overide the the border around the poster when you print*/
+		transform: scale(1)!important; /*override the page scaling*/
+		
+
+	}
+
+}
+
+.container {
+	font-family: 'Nova Cut', cursive;
+	position: relative;
+	text-align: left;
+	color: white;
+}
+
+.img1 {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 11in;
+	height: 17in;
+	padding: 30px;
+}
+
+.img2 {
+	filter: grayscale(100%);
+	position: absolute;
+	bottom: 700px;
+	left: 150px;
+	width: 250px;
+	filter: drop-shadow(16px 16px 10px black);
+}
+
+.quote {
+	position: absolute;
+	top: 480px;
+	left: 505px;
+	width: 800px;
+	padding: 50px;
+	font-size: 1.10em;
+	color: white;
+}
+
+.citation {
+	position: absolute;
+	top: 920px;
+	right: 290px;
+}
+
+.newspaper {
+	position: absolute;
+	bottom: 270px;
+	left: 20px;
+	width: 900px;
+}
